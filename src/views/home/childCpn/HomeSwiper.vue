@@ -1,5 +1,5 @@
 <template>
-  <van-swipe :autoplay="3000">
+  <van-swipe :autoplay="3000" class="homeSwiper">
     <van-swipe-item v-for="(item, index) in banners" :key="index" class="home_swiper_item">
       <a :href="item.link" class="myswiper">
         <img :src="item.image" class="swipe_item_img"/>
@@ -31,5 +31,9 @@ import { Swipe,SwipeItem } from "vant"
 <style scoped>
 .swipe_item_img{
   width: 100%;
+}
+
+.homeSwiper{
+  padding-top: 44px;
 }
 </style>

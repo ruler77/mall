@@ -1,6 +1,6 @@
 <template>
   <div class="home_nav">
-    <nav-bar class="home_nav">
+    <nav-bar>
       <template v-slot:center><div class="nav_title">购物街</div></template>
     </nav-bar>
   </div>
@@ -24,5 +24,9 @@ export default {
 }
 .home_nav{
   background-color: #ff8198;
+  width: 100%;
+
+  position: fixed;
+  z-index: 9;
 }
 </style>
